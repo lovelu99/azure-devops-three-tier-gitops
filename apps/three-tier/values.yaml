@@ -1,15 +1,13 @@
 namespace: three-tier
-
 azure:
   workloadIdentityClientId: "0f48880b-ce16-4970-9f2a-dfd312bc2c41"
   keyVaultName: "kv-3tier-app-lovelu2"
   tenantId: "2a1f0b68-fdde-4151-9edf-97628de42914"
-
 frontend:
   replicaCount: 2
   image:
     repository: loveluacr.azurecr.io/frontend
-    tag: "53"
+    tag: ""
     pullPolicy: Always
   containerPort: 8080
   service:
@@ -40,7 +38,6 @@ frontend:
   pdb:
     enabled: true
     minAvailable: 1
-
 backend:
   replicaCount: 2
   serviceAccountName: backend-sa
@@ -88,12 +85,10 @@ backend:
     targetCPUUtilizationPercentage: 70
   pdb:
     enabled: true
-    minAvailable: 1  
-
+    minAvailable: 1
 ingress:
   enabled: true
   className: webapprouting.kubernetes.azure.com
   host: ""
-
 networkPolicy:
   enabled: true
