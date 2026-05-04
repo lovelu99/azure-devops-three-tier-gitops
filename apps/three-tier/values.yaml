@@ -7,7 +7,7 @@ frontend:
   replicaCount: 2
   image:
     repository: loveluacr.azurecr.io/frontend
-    tag: "68"
+    tag: "67"
     pullPolicy: Always
   containerPort: 8080
   service:
