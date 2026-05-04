@@ -7,7 +7,11 @@ frontend:
   replicaCount: 2
   image:
     repository: loveluacr.azurecr.io/frontend
+<<<<<<< HEAD
     tag: "68"
+=======
+    tag: "66"
+>>>>>>> parent of cc0492c (Update image tag to 67)
     pullPolicy: Always
   containerPort: 8080
   service:
