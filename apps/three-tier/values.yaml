@@ -9,7 +9,7 @@ frontend:
   replicaCount: 2
   image:
     repository: loveluacr.azurecr.io/frontend
-    tag: "41"
+    tag: "53"
     pullPolicy: Always
   containerPort: 8080
   service:
@@ -47,7 +47,7 @@ backend:
   workloadIdentityEnabled: true
   image:
     repository: loveluacr.azurecr.io/backend-api
-    tag: "41"
+    tag: "53"
     pullPolicy: Always
   containerPort: 8080
   service:
