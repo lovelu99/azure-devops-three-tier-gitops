@@ -3,6 +3,8 @@ kind: Service
 metadata:
   name: frontend-service
   namespace: {{ .Values.namespace }}
+  labels:
+    app: frontend
 spec:
   type: {{ .Values.frontend.service.type }}
   selector:
