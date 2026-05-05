@@ -44,7 +44,7 @@ backend:
   workloadIdentityEnabled: true
   image:
     repository: loveluacr.azurecr.io/backend-api
-    tag: "69"
+    tag: "70"
     pullPolicy: Always
   containerPort: 8080
   service:
